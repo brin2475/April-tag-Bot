@@ -27,13 +27,13 @@ public class Robot extends TimedRobot {
     PhotonCamera camera = new PhotonCamera("photonvision");
 
     // PID constants should be tuned per robot
-    final double LINEAR_P = 0.1;
-    final double LINEAR_D = 0.0;
-    PIDController forwardController = new PIDController(LINEAR_P, 1.5, LINEAR_D);
+    final double LINEAR_P = 2.5;
+    final double LINEAR_D = 2.5;
+    PIDController forwardController = new PIDController(LINEAR_P, 2.5, LINEAR_D);
 
-    final double ANGULAR_P = 0.1;
-    final double ANGULAR_D = 0.0;
-    PIDController turnController = new PIDController(ANGULAR_P, 1.5, ANGULAR_D);
+    final double ANGULAR_P = 2.5;
+    final double ANGULAR_D = 2.5;
+    PIDController turnController = new PIDController(ANGULAR_P, 2.5, ANGULAR_D);
 
     //XboxController xboxController = new XboxController(0);
     Joystick stick = new Joystick(0);
